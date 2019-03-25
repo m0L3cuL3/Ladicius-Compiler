@@ -22,8 +22,16 @@ Coded by:
 - [ ] Supports csharp compilation
 - [ ] Javadoc generation
 - [ ] Settings
+- [x] Tutorials
+- [x] Installers for Java SE Development Kit
 
 ## Help
 
 1. Where is the .exe file?
-> Go to `Debug` folder
+> Go to `bin/Debug` folder
+2. How to compile .java file?
+> Select file to compile
+
+> Press `add` to add in compiler
+
+> Press `compile` to compile the .java file
