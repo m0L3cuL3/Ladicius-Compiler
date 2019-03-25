@@ -27,6 +27,7 @@ Coded by:
 - [ ] Settings
 - [x] Tutorials
 - [x] Installers for Java SE Development Kit
+- [x] Rainbow Thingy
 
 ## Help
 
