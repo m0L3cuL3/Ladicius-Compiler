@@ -3,10 +3,10 @@ This is mainly a Java compiler for lazy people like me.
 
 Suggestions are welcome.
 
-Written in:
+<b>Written in:</b>
 - C#
 
-Coded by:
+<b>Coded by:</b>
 - Sean Baang
 
 ## Screenshots
