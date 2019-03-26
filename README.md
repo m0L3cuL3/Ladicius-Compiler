@@ -25,6 +25,7 @@ Coded by:
 - [ ] Supports csharp compilation
 - [ ] Javadoc generation
 - [ ] Settings
+- [ ] Compiling multiple files at once
 - [x] Tutorials
 - [x] Installers for Java SE Development Kit
 - [x] Rainbow Thingy
