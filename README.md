@@ -23,13 +23,12 @@ Suggestions are welcome.
 <img src="screenshots/installers.PNG"> 
 
 ## Possible updates / To be added
-- [ ] Supports python execution
-- [ ] Supports csharp compilation
+- [ ] Supports python script execution
 - [ ] Javadoc generation
 - [ ] Settings
 - [ ] Compiling multiple files at once
-- [x] Tutorials
-- [x] Installers for Java SE Development Kit
+- [x] Tutorial links
+- [x] Link installers for Java SE Development Kit
 - [x] Rainbow Thingy
 
 ## Help
