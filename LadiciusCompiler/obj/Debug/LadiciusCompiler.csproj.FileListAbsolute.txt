@@ -10,3 +10,15 @@ D:\Coding Files\Projects VB\LadiciusCompiler\LadiciusCompiler\bin\Debug\Ladicius
 D:\Coding Files\Projects VB\LadiciusCompiler\LadiciusCompiler\bin\Debug\Ladicius Compiler.pdb
 D:\Coding Files\Projects VB\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.exe
 D:\Coding Files\Projects VB\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.pdb
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\bin\Debug\Ladicius Compiler.exe.config
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\bin\Debug\Ladicius Compiler.exe
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\bin\Debug\Ladicius Compiler.pdb
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.csprojResolveAssemblyReference.cache
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.InstallerForm.resources
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.MainForm.resources
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.Properties.Resources.resources
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.TutorialForm.resources
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.csproj.GenerateResource.Cache
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.csproj.CoreCompileInputs.cache
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.exe
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.pdb
