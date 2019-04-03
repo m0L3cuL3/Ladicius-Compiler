@@ -48,7 +48,6 @@
             this.b_compile = new System.Windows.Forms.Button();
             this.b_browse = new System.Windows.Forms.Button();
             this.gb_javadoc = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.b_settings = new System.Windows.Forms.Button();
             this.ll_github = new System.Windows.Forms.LinkLabel();
@@ -58,9 +57,13 @@
             this.gb_guides = new System.Windows.Forms.GroupBox();
             this.b_jdk = new System.Windows.Forms.Button();
             this.b_setenvironment = new System.Windows.Forms.Button();
+            this.b_compileAll = new System.Windows.Forms.Button();
             this.gradientPanel1 = new LadiciusCompiler.GradientPanel();
             this.lb_close = new System.Windows.Forms.Label();
             this.lb_title = new System.Windows.Forms.Label();
+            this.b_findfolder = new System.Windows.Forms.Button();
+            this.tb_foldername = new System.Windows.Forms.TextBox();
+            this.b_javadoc = new System.Windows.Forms.Button();
             this.gb_compile.SuspendLayout();
             this.gb_functions.SuspendLayout();
             this.gb_fileformat.SuspendLayout();
@@ -73,9 +76,9 @@
             // 
             // gb_compile
             // 
+            this.gb_compile.Controls.Add(this.b_compileAll);
             this.gb_compile.Controls.Add(this.gb_functions);
             this.gb_compile.Controls.Add(this.gb_fileformat);
-            this.gb_compile.Controls.Add(this.b_cmd);
             this.gb_compile.Controls.Add(this.fileList);
             this.gb_compile.Controls.Add(this.tb_filename);
             this.gb_compile.Controls.Add(this.b_compile);
@@ -97,7 +100,7 @@
             this.gb_functions.ForeColor = System.Drawing.Color.White;
             this.gb_functions.Location = new System.Drawing.Point(367, 20);
             this.gb_functions.Name = "gb_functions";
-            this.gb_functions.Size = new System.Drawing.Size(114, 77);
+            this.gb_functions.Size = new System.Drawing.Size(114, 79);
             this.gb_functions.TabIndex = 3;
             this.gb_functions.TabStop = false;
             this.gb_functions.Text = "file functions";
@@ -143,7 +146,7 @@
             this.gb_fileformat.Controls.Add(this.rb_csharp);
             this.gb_fileformat.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_fileformat.ForeColor = System.Drawing.Color.White;
-            this.gb_fileformat.Location = new System.Drawing.Point(367, 103);
+            this.gb_fileformat.Location = new System.Drawing.Point(367, 105);
             this.gb_fileformat.Name = "gb_fileformat";
             this.gb_fileformat.Size = new System.Drawing.Size(114, 165);
             this.gb_fileformat.TabIndex = 3;
@@ -246,9 +249,9 @@
             this.b_cmd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_cmd.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_cmd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.b_cmd.Location = new System.Drawing.Point(118, 266);
+            this.b_cmd.Location = new System.Drawing.Point(88, 6);
             this.b_cmd.Name = "b_cmd";
-            this.b_cmd.Size = new System.Drawing.Size(122, 25);
+            this.b_cmd.Size = new System.Drawing.Size(116, 23);
             this.b_cmd.TabIndex = 14;
             this.b_cmd.Text = "command prompt";
             this.b_cmd.UseVisualStyleBackColor = false;
@@ -261,6 +264,7 @@
             this.fileList.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.fileList.FormattingEnabled = true;
+            this.fileList.HorizontalScrollbar = true;
             this.fileList.Location = new System.Drawing.Point(6, 20);
             this.fileList.Name = "fileList";
             this.fileList.Size = new System.Drawing.Size(355, 221);
@@ -272,10 +276,10 @@
             this.tb_filename.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_filename.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_filename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tb_filename.Location = new System.Drawing.Point(5, 247);
+            this.tb_filename.Location = new System.Drawing.Point(6, 244);
             this.tb_filename.Name = "tb_filename";
             this.tb_filename.ReadOnly = true;
-            this.tb_filename.Size = new System.Drawing.Size(356, 14);
+            this.tb_filename.Size = new System.Drawing.Size(355, 14);
             this.tb_filename.TabIndex = 8;
             // 
             // b_compile
@@ -285,11 +289,11 @@
             this.b_compile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_compile.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_compile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.b_compile.Location = new System.Drawing.Point(5, 266);
+            this.b_compile.Location = new System.Drawing.Point(6, 263);
             this.b_compile.Name = "b_compile";
-            this.b_compile.Size = new System.Drawing.Size(107, 25);
+            this.b_compile.Size = new System.Drawing.Size(81, 25);
             this.b_compile.TabIndex = 7;
-            this.b_compile.Text = "compile";
+            this.b_compile.Text = "compile file";
             this.b_compile.UseVisualStyleBackColor = false;
             this.b_compile.Click += new System.EventHandler(this.b_compile_Click);
             // 
@@ -300,9 +304,9 @@
             this.b_browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_browse.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_browse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.b_browse.Location = new System.Drawing.Point(246, 266);
+            this.b_browse.Location = new System.Drawing.Point(233, 263);
             this.b_browse.Name = "b_browse";
-            this.b_browse.Size = new System.Drawing.Size(115, 25);
+            this.b_browse.Size = new System.Drawing.Size(80, 25);
             this.b_browse.TabIndex = 6;
             this.b_browse.Text = "browse file";
             this.b_browse.UseVisualStyleBackColor = false;
@@ -310,7 +314,9 @@
             // 
             // gb_javadoc
             // 
-            this.gb_javadoc.Controls.Add(this.label1);
+            this.gb_javadoc.Controls.Add(this.b_javadoc);
+            this.gb_javadoc.Controls.Add(this.tb_foldername);
+            this.gb_javadoc.Controls.Add(this.b_findfolder);
             this.gb_javadoc.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_javadoc.ForeColor = System.Drawing.Color.White;
             this.gb_javadoc.Location = new System.Drawing.Point(500, 79);
@@ -320,22 +326,12 @@
             this.gb_javadoc.TabStop = false;
             this.gb_javadoc.Text = "javadoc";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "COMING SOON...";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.b_settings);
             this.panel1.Controls.Add(this.ll_github);
+            this.panel1.Controls.Add(this.b_cmd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 39);
             this.panel1.Name = "panel1";
@@ -439,6 +435,21 @@
             this.b_setenvironment.UseVisualStyleBackColor = false;
             this.b_setenvironment.Click += new System.EventHandler(this.b_setenvironment_Click);
             // 
+            // b_compileAll
+            // 
+            this.b_compileAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(10)))), ((int)(((byte)(93)))));
+            this.b_compileAll.FlatAppearance.BorderSize = 0;
+            this.b_compileAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_compileAll.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_compileAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.b_compileAll.Location = new System.Drawing.Point(93, 263);
+            this.b_compileAll.Name = "b_compileAll";
+            this.b_compileAll.Size = new System.Drawing.Size(134, 25);
+            this.b_compileAll.TabIndex = 10;
+            this.b_compileAll.Text = "compile all java files";
+            this.b_compileAll.UseVisualStyleBackColor = false;
+            this.b_compileAll.Click += new System.EventHandler(this.b_compileAll_Click);
+            // 
             // gradientPanel1
             // 
             this.gradientPanel1.Angle = 0F;
@@ -479,6 +490,48 @@
             this.lb_title.Size = new System.Drawing.Size(231, 23);
             this.lb_title.TabIndex = 0;
             this.lb_title.Text = "Ladicius Compiler";
+            // 
+            // b_findfolder
+            // 
+            this.b_findfolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(10)))), ((int)(((byte)(93)))));
+            this.b_findfolder.FlatAppearance.BorderSize = 0;
+            this.b_findfolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_findfolder.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_findfolder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.b_findfolder.Location = new System.Drawing.Point(6, 41);
+            this.b_findfolder.Name = "b_findfolder";
+            this.b_findfolder.Size = new System.Drawing.Size(179, 21);
+            this.b_findfolder.TabIndex = 18;
+            this.b_findfolder.Text = "browse folder";
+            this.b_findfolder.UseVisualStyleBackColor = false;
+            this.b_findfolder.Click += new System.EventHandler(this.b_findfolder_Click);
+            // 
+            // tb_foldername
+            // 
+            this.tb_foldername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tb_foldername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_foldername.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_foldername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tb_foldername.Location = new System.Drawing.Point(6, 20);
+            this.tb_foldername.Name = "tb_foldername";
+            this.tb_foldername.ReadOnly = true;
+            this.tb_foldername.Size = new System.Drawing.Size(179, 14);
+            this.tb_foldername.TabIndex = 11;
+            // 
+            // b_javadoc
+            // 
+            this.b_javadoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(10)))), ((int)(((byte)(93)))));
+            this.b_javadoc.FlatAppearance.BorderSize = 0;
+            this.b_javadoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_javadoc.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_javadoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.b_javadoc.Location = new System.Drawing.Point(6, 68);
+            this.b_javadoc.Name = "b_javadoc";
+            this.b_javadoc.Size = new System.Drawing.Size(179, 21);
+            this.b_javadoc.TabIndex = 19;
+            this.b_javadoc.Text = "start";
+            this.b_javadoc.UseVisualStyleBackColor = false;
+            this.b_javadoc.Click += new System.EventHandler(this.b_javadoc_Click);
             // 
             // MainForm
             // 
@@ -548,7 +601,10 @@
         private System.Windows.Forms.Button b_removeToCompiler;
         private System.Windows.Forms.Button b_addToCompiler;
         private System.Windows.Forms.Button b_removeFromList;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button b_compileAll;
+        private System.Windows.Forms.Button b_javadoc;
+        private System.Windows.Forms.TextBox tb_foldername;
+        private System.Windows.Forms.Button b_findfolder;
     }
 }
 

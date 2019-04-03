@@ -260,6 +260,51 @@ namespace LadiciusCompiler
             Process.Start(Globals.github1);
         }
 
+        // compiles all java files
+        private void b_compileAll_Click(object sender, EventArgs e)
+        {
+            string folderpath;
+
+            FolderBrowserDialog folderdlg = new FolderBrowserDialog();
+            folderdlg.ShowNewFolderButton = true;
+            DialogResult result = folderdlg.ShowDialog();
+
+
+            if(result == DialogResult.OK)
+            {
+                folderpath = folderdlg.SelectedPath;
+                Environment.SpecialFolder root = folderdlg.RootFolder;
+                Process.Start("cmd.exe", "/k cd " + folderpath + " & javac " + Globals.JAVA + "& echo off & echo [+] Process Done!");
+            }
+        }
+
+        // for browsing folder 
+        private void b_findfolder_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderdlg = new FolderBrowserDialog();
+            folderdlg.ShowNewFolderButton = true;
+            DialogResult result = folderdlg.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                tb_foldername.Text = folderdlg.SelectedPath;
+                Environment.SpecialFolder root = folderdlg.RootFolder;
+            }
+        }
+
+        // starts javadoc
+        private void b_javadoc_Click(object sender, EventArgs e)
+        {
+            if(tb_foldername.Text == "")
+            {
+                MessageBox.Show("Please select a folder...");
+            }
+            else
+            {
+                Process.Start("cmd.exe", "/k cd " + tb_foldername.Text + " & javadoc " + Globals.JAVA + "& echo off & echo [+] Process Done!");
+            }
+        }
+
         // for clearing the file list
         private void b_clear_Click(object sender, EventArgs e)
         {
