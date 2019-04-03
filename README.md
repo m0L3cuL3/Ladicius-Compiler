@@ -24,9 +24,9 @@ Suggestions are welcome.
 
 ## Possible updates / To be added
 - [ ] Supports python script execution
-- [ ] Javadoc generation
+- [x] Javadoc generation
 - [ ] Settings
-- [ ] Compiling multiple files at once
+- [x] Compiling multiple files at once
 - [x] Tutorial links
 - [x] Link installers for Java SE Development Kit
 - [x] Rainbow Thingy
