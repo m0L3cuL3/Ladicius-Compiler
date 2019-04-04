@@ -30,6 +30,7 @@ Suggestions are welcome.
 - [x] Tutorial links
 - [x] Link installers for Java SE Development Kit
 - [x] Rainbow Thingy
+- [ ] Tool tips for more information
 
 ## Help
 
