@@ -34,9 +34,9 @@ Suggestions are welcome.
 
 ## Help
 
-1. Where is the .exe file?
+- Where is the .exe file?
 > Go to `bin/Debug` folder
-2. How to compile .java file?
+- How to compile .java file?
 > Select file to compile
 
 > Press `add` to add in compiler
