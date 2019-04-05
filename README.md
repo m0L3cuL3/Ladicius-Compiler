@@ -26,12 +26,12 @@ Suggestions are welcome.
 ## To be added
 - [ ] Supports python script execution
 - [x] Javadoc generation
-- [ ] Settings (e.g: Button Color, Button Font, Form BG Color, Gradient Color)
+- [X] Settings (e.g: Button Color, Button Font, Form BG Color, Gradient Color) -> buggy :(
 - [x] Compiling multiple files at once
 - [x] Tutorial links
 - [x] Link installers for Java SE Development Kit
 - [x] Rainbow Thingy
-- [ ] Tool tips for more information
+- [X] Tool tips for more information
 
 ## Help
 
