@@ -21,8 +21,10 @@ namespace LadiciusCompiler
         // when form loads
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer.Start();
-            timer.Interval = 250; 
+            Settings set = new Settings();
+
+            set.LoadSettings();
+            Gpanel.Refresh();
         }
 
         /* in order for the window to move */
@@ -232,6 +234,13 @@ namespace LadiciusCompiler
                 }
             }
 
+        }
+
+        // shows settings form
+        private void b_settings_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
         }
 
         // start command prompt

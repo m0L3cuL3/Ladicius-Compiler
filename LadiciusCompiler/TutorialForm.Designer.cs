@@ -59,6 +59,7 @@
             this.lb_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_close.AutoSize = true;
             this.lb_close.BackColor = System.Drawing.Color.Transparent;
+            this.lb_close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb_close.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_close.ForeColor = System.Drawing.Color.White;
             this.lb_close.Location = new System.Drawing.Point(271, 1);

@@ -22,3 +22,4 @@ D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusComp
 D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.csproj.CoreCompileInputs.cache
 D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.exe
 D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\Ladicius Compiler.pdb
+D:\CodingFiles\Projects\LadiciusCompiler\LadiciusCompiler\obj\Debug\LadiciusCompiler.Settings.resources

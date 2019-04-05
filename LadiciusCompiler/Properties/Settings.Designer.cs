@@ -22,5 +22,41 @@ namespace LadiciusCompiler.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkbox {
+            get {
+                return ((bool)(this["checkbox"]));
+            }
+            set {
+                this["checkbox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rb_1 {
+            get {
+                return ((bool)(this["rb_1"]));
+            }
+            set {
+                this["rb_1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rb_2 {
+            get {
+                return ((bool)(this["rb_2"]));
+            }
+            set {
+                this["rb_2"] = value;
+            }
+        }
     }
 }
