@@ -11,6 +11,10 @@ Suggestions are welcome.
 
 <img src="screenshots/main.PNG"> 
 
+<b>Settings Form</b>
+
+<img src="screenshots/settings.PNG">
+
 <b>Tutorial Form</b>
 
 <img src="screenshots/tuts.PNG"> 
