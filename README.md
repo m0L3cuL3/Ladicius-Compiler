@@ -6,9 +6,6 @@ Suggestions are welcome.
 <b>Written in:</b>
 - C#
 
-<b>Coded by:</b>
-- Sean Baang
-
 ## Screenshots
 <b>Main Form</b>
 
@@ -22,10 +19,10 @@ Suggestions are welcome.
 
 <img src="screenshots/installers.PNG"> 
 
-## Possible updates / To be added
+## To be added
 - [ ] Supports python script execution
 - [x] Javadoc generation
-- [ ] Settings
+- [ ] Settings (e.g: Button Color, Button Font, Form BG Color, Gradient Color)
 - [x] Compiling multiple files at once
 - [x] Tutorial links
 - [x] Link installers for Java SE Development Kit
@@ -42,3 +39,6 @@ Suggestions are welcome.
 > Press `add` to add in compiler
 
 > Press `compile` to compile the .java file
+
+## Credits
+ - Me :)
