@@ -1,5 +1,5 @@
 # Information
-This is mainly a Java compiler for lazy people like me.
+This is mainly a Java "compiler" for lazy people like me.
 
 Suggestions are welcome.
 
@@ -25,6 +25,7 @@ Suggestions are welcome.
 
 ## To be added
 - [ ] Supports python script execution
+- [ ] Auto-update
 - [x] Javadoc generation
 - [X] Settings (e.g: Button Color, Button Font, Form BG Color, Gradient Color) -> buggy :(
 - [x] Compiling multiple files at once
